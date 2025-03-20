@@ -15,3 +15,7 @@ To further test the robustness of the model against background interference, we 
 <img src="Figs/ImageNet-bg.png" width="96%">
 
 ## Pseudo-OOD Generation
+
+### Image Masking
+
+### Image Inpainting

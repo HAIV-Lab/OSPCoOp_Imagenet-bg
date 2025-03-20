@@ -6,6 +6,8 @@ The code repository for "[Overcoming Shortcut Problem in VLM for Robust Out-of-D
     
 ## News
 
+[03/2025]🎉  We have released the proposed "[ImageNet-Bg]".
+
 [02/2025]🎉  Our paper has been accepted by CVPR2025.
 
 ## The proposed ImageNet-Bg

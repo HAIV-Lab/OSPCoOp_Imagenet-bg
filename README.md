@@ -1,10 +1,10 @@
 # Overcoming Shortcut Problem in VLM for Robust Out-of-Distribution Detection
 
-The code repository for "[Overcoming Shortcut Problem in VLM for Robust Out-of-Distribution Detection](https://www.kaggle.com/datasets/xiangexiang/imagenet-bg-ospcoop-cvpr2025)" in PyTorch. 
+The code repository for "[Overcoming Shortcut Problem in VLM for Robust Out-of-Distribution Detection]" in PyTorch. 
     
 ## News
 
-[03/2025]🎉  We have released the proposed "[ImageNet-Bg]".
+[03/2025]🎉  We have released the proposed "[ImageNet-Bg](https://www.kaggle.com/datasets/xiangexiang/imagenet-bg-ospcoop-cvpr2025)".
 
 [02/2025]🎉  Our paper has been accepted by CVPR2025.
 

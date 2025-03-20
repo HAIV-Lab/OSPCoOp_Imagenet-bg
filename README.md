@@ -1,1 +1,1 @@
-# OSPCOOP_Imagenet-bg
+# OSPCoOp & Imagenet-bg

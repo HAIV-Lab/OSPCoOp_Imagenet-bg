@@ -117,16 +117,16 @@ def read_file_line_by_line(file_path):
     return id2clsname
             # 使用 strip() 去除行末的换行符
 
-    def get_image_paths(root_folder):
-        image_paths = []
-        # 遍历根文件夹下的所有子文件夹
-        for subdir, _, files in os.walk(root_folder):
-            for file in files:
-                # 检查文件扩展名是否是常见的图片格式
-                if file.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.bmp')):
-                    # 将完整路径添加到列表中
-                    image_paths.append(os.path.join(subdir, file))
-        return image_paths
+def get_image_paths(root_folder):
+    image_paths = []
+    # 遍历根文件夹下的所有子文件夹
+    for subdir, _, files in os.walk(root_folder):
+        for file in files:
+            # 检查文件扩展名是否是常见的图片格式
+            if file.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.bmp')):
+                # 将完整路径添加到列表中
+                image_paths.append(os.path.join(subdir, file))
+    return image_paths
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser("Grounded-Segment-Anything Demo", add_help=True)
@@ -146,8 +146,6 @@ if __name__ == "__main__":
     parser.add_argument(
         "--use_sam_hq", action="store_true", help="using sam-hq for prediction"
     )
-    parser.add_argument("--input_image", type=str, required=True, help="path to image file")
-    parser.add_argument("--text_prompt", type=str, required=True, help="text prompt")
     parser.add_argument(
         "--output_dir", type=str, default="", required=True, help="output directory"
     )
@@ -174,8 +172,6 @@ if __name__ == "__main__":
     sam_checkpoint = args.sam_checkpoint
     sam_hq_checkpoint = args.sam_hq_checkpoint
     use_sam_hq = args.use_sam_hq
-    image_path = args.input_image
-    text_prompt = args.text_prompt
     box_threshold = args.box_threshold
     text_threshold = args.text_threshold
     device = args.device

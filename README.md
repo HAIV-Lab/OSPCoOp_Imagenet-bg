@@ -42,9 +42,9 @@ python inpainting.py --output_dir output    --lama_ckpt ./pretrained_models/big-
 
 Step4: Run the following command to compute the score of inpainting images:
 ```
-python inpainting.py --output_dir output    --lama_ckpt ./pretrained_models/big-lama  --min=0.0  --max=0.25
+python get_clip_score.py  --output_dir output
 ```
-Step5: To generate texture OOD aug data, please run the following command:
+Step5: To generate the texture OOD aug data, please run the following command:
 ```
-python Texture_inpainting.py --output_dir output    --lama_ckpt ./pretrained_models/big-lama  --min=0.0  --max=0.25
+python Texture_inpainting.py  --output_dir output    --lama_ckpt ./pretrained_models/big-lama  --min=0.0  --max=0.25
 ```

@@ -58,25 +58,12 @@ class TextEncoder(nn.Module):
 class ZSLCLIP(nn.Module):
     def __init__(self, classnames, clip_model):
         super().__init__()
-
-        # prompt_text = ['a photo of a '+name.replace("_", " ") for name in classnames]
-        #
-        #
-        # self.tokenized_prompts = torch.cat([clip.tokenize(p) for p in prompt_text]).cuda()
-        # self.embedding = clip_model.token_embedding(self.tokenized_prompts)
-        # self.image_encoder = clip_model.visual
-        # self.text_encoder = TextEncoder(clip_model)
-        # self.logit_scale = clip_model.logit_scale
-        # self.dtype = clip_model.dtype
         self.dtype = clip_model.dtype
         clip_model = clip_model.cuda()
         prompt_text = ['a photo of a '+name.replace("_", " ") for name in classnames]
-        # self.tokenized_prompts = self.prompt_learner.tokenized_prompts
         self.image_encoder = clip_model.visual
         self.text_encoder = TextEncoder(clip_model)
         self.logit_scale = clip_model.logit_scale
-
-
         self.tokenized_prompts = torch.cat([clip.tokenize(p) for p in prompt_text]).cuda()
         self.embedding = clip_model.token_embedding(self.tokenized_prompts).type(self.dtype)
 
@@ -92,7 +79,6 @@ class ZSLCLIP(nn.Module):
         text_features = text_features / text_features.norm(dim=-1, keepdim=True)
 
         logit_scale = self.logit_scale.exp()
-
         logits = logit_scale * image_features @ text_features.t()
         logits_local = logit_scale * local_image_features @ text_features.T
 
@@ -136,12 +122,9 @@ import os
 
 def get_image_paths(root_folder):
     image_paths = []
-    # 遍历根文件夹下的所有子文件夹
     for subdir, _, files in os.walk(root_folder):
         for file in files:
-            # 检查文件扩展名是否是常见的图片格式
             if file.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.bmp')):
-                # 将完整路径添加到列表中
                 image_paths.append(os.path.join(subdir, file))
     return image_paths
 
@@ -166,8 +149,7 @@ if __name__ == "__main__":
     image_files = get_image_paths(folder_path)
 
     print(image_files)
-    kernel = np.ones((12,12), np.uint8)  # 5x5 的矩形结构元素
-
+    kernel = np.ones((12,12), np.uint8)  
     for imgname in image_files:
 
         start_time = time.time()

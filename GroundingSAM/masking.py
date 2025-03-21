@@ -10,7 +10,7 @@ from PIL import Image
 sys.path.append(os.path.join(os.getcwd(), "GroundingDINO"))
 sys.path.append(os.path.join(os.getcwd(), "segment_anything"))
 import matplotlib
-matplotlib.use('Agg')  # 或者使用 'TkAgg', 'Qt5Agg' 等
+matplotlib.use('Agg') 
 import matplotlib.pyplot as plt
 
 # Grounding DINO
@@ -181,7 +181,7 @@ if __name__ == "__main__":
     directory_path = root + "/raw/"
     images = get_image_paths(directory_path)
     model = load_model(config_file, grounded_checkpoint, bert_base_uncased_path, device=device)
-    id2clsname = read_file_line_by_line("./classnames.txt")
+    id2clsname = read_file_line_by_line("classnames.txt")
     if use_sam_hq:
         predictor = SamPredictor(sam_hq_model_registry[sam_version](checkpoint=sam_hq_checkpoint).to(device))
     else:

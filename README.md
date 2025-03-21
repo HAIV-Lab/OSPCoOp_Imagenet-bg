@@ -17,8 +17,7 @@ To further test the robustness of the model against background interference, we 
 ## Pseudo-OOD Generation
 
 ### Image Masking
-Please follow the settings in the `exps` folder to prepare your json files, and then run:
-
+Please install [Grounded-Segment-Anything](https://github.com/IDEA-Research/Grounded-Segment-Anything), and place ./GroundingSAM/masking.py into your Grounded-Segment-Anything log, and then run:
 ```
 python ./GroundingSAM/masking.py --config GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py   --grounded_checkpoint groundingdino_swint_ogc.pth   --sam_checkpoint sam_vit_h_4b8939.pth   --output_dir ""   --box_threshold 0.3   --text_threshold 0.25    --device "cuda"
 ```

@@ -4,7 +4,7 @@ The code repository for "Overcoming Shortcut Problem in VLM for Robust Out-of-Di
     
 ## News
 
-[03/2025]🎉  We have released the proposed [ImageNet-Bg](https://www.kaggle.com/datasets/xiangexiang/imagenet-bg-ospcoop-cvpr2025).
+[03/2025]🎉  We have released the proposed [ImageNet-Bg](https://www.kaggle.com/datasets/xiangexiang/imagenet-bg-ospcoop-cvpr2025) along with the code for OOD generation.
 
 [02/2025]🎉  Our paper has been accepted by CVPR2025.
 

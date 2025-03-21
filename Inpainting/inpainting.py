@@ -36,12 +36,9 @@ def setup_args(parser):
 
 def get_image_paths(root_folder):
     image_paths = []
-    # 遍历根文件夹下的所有子文件夹
     for subdir, _, files in os.walk(root_folder):
         for file in files:
-            # 检查文件扩展名是否是常见的图片格式
             if file.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.bmp')):
-                # 将完整路径添加到列表中
                 image_paths.append(os.path.join(subdir, file))
     return image_paths
 
@@ -51,7 +48,7 @@ if __name__ == "__main__":
     setup_args(parser)
     args = parser.parse_args(sys.argv[1:])
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    text_file = os.path.join("./classnames.txt")
+    text_file = os.path.join("classnames.txt")
     root = args.output_dir
     folder_path = root + "/mask/"
     image_files = get_image_paths(folder_path)

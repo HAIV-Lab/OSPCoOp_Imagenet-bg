@@ -21,7 +21,7 @@ Please follow these steps:
 
 Step1: Please install [Grounded-Segment-Anything](https://github.com/IDEA-Research/Grounded-Segment-Anything).
 
-Step2: Copy the ./GroundingSAM/masking.py file into your Grounded-Segment-Anything project directory.
+Step2: Copy the ./GroundingSAM/masking.py and ./GroundingSAM/classnames.py file into your Grounded-Segment-Anything project directory.
 
 Step3: Run the following command:
 ```

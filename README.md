@@ -17,8 +17,12 @@ To further test the robustness of the model against background interference, we 
 ## Pseudo-OOD Generation
 
 ### Image Masking
-Please install [Grounded-Segment-Anything](https://github.com/IDEA-Research/Grounded-Segment-Anything), and place ./GroundingSAM/masking.py into your Grounded-Segment-Anything log, and then run:
+Please follow these steps:
+Step1: Please install [Grounded-Segment-Anything](https://github.com/IDEA-Research/Grounded-Segment-Anything).
+Step2: Copy the ./GroundingSAM/masking.py file into your Grounded-Segment-Anything project directory.
+Step3: Run the following command:
 ```
-python ./GroundingSAM/masking.py --config GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py   --grounded_checkpoint groundingdino_swint_ogc.pth   --sam_checkpoint sam_vit_h_4b8939.pth   --output_dir ""   --box_threshold 0.3   --text_threshold 0.25    --device "cuda"
+python ./GroundingSAM/masking.py --config GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py   --grounded_checkpoint groundingdino_swint_ogc.pth   --sam_checkpoint sam_vit_h_4b8939.pth   --output_dir "output_dir"   --box_threshold 0.3   --text_threshold 0.25    --device "cuda"
 ```
+Note: Set "output_dir" to your image directory, and place the images to be processed in the "./output_dir/raw" directory.
 ### Image Inpainting

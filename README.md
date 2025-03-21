@@ -25,7 +25,7 @@ Step2: Copy the ./GroundingSAM/masking.py and ./GroundingSAM/classnames.py file 
 
 Step3: Run the following command:
 ```
-python ./GroundingSAM/masking.py --config GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py   --grounded_checkpoint groundingdino_swint_ogc.pth   --sam_checkpoint sam_vit_h_4b8939.pth   --output_dir "output_dir"   --box_threshold 0.3   --text_threshold 0.25    --device "cuda"
+python masking.py --config GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py   --grounded_checkpoint groundingdino_swint_ogc.pth   --sam_checkpoint sam_vit_h_4b8939.pth   --output_dir "output_dir"   --box_threshold 0.3   --text_threshold 0.25    --device "cuda"
 ```
 Note: Set "output_dir" to your image directory, and place the images to be processed in the "./output_dir/raw" directory.
 ### Image Inpainting
@@ -35,9 +35,16 @@ Step1: Please install [Inpaint-Anything](https://github.com/geekyutao/Inpaint-An
 
 Step2: Copy the ./Inpainting/inpainting.py, ./Inpainting/Texture_inpainting.py and ./GroundingSAM/classnames.py file into your Inpaint-Anything project directory.
 
-Step3: Run the following command:
+Step3: Run the following command to generate the inpainting images:
 ```
-python ./GroundingSAM/masking.py --config GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py   --grounded_checkpoint groundingdino_swint_ogc.pth   --sam_checkpoint sam_vit_h_4b8939.pth   --output_dir "output_dir"   --box_threshold 0.3   --text_threshold 0.25    --device "cuda"
+python inpainting.py --output_dir output    --lama_ckpt ./pretrained_models/big-lama  --min=0.0  --max=0.25
 ```
-Note: Set "output_dir" to your image directory, and place the images to be processed in the "./output_dir/raw" directory.
 
+Step4: Run the following command to compute the score of inpainting images:
+```
+python inpainting.py --output_dir output    --lama_ckpt ./pretrained_models/big-lama  --min=0.0  --max=0.25
+```
+Step5: To generate texture OOD aug data, please run the following command:
+```
+python Texture_inpainting.py --output_dir output    --lama_ckpt ./pretrained_models/big-lama  --min=0.0  --max=0.25
+```

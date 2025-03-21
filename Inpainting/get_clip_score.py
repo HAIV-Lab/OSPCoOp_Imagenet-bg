@@ -30,25 +30,12 @@ class TextEncoder(nn.Module):
 class ZSLCLIP(nn.Module):
     def __init__(self, classnames, clip_model):
         super().__init__()
-
-        # prompt_text = ['a photo of a '+name.replace("_", " ") for name in classnames]
-        #
-        #
-        # self.tokenized_prompts = torch.cat([clip.tokenize(p) for p in prompt_text]).cuda()
-        # self.embedding = clip_model.token_embedding(self.tokenized_prompts)
-        # self.image_encoder = clip_model.visual
-        # self.text_encoder = TextEncoder(clip_model)
-        # self.logit_scale = clip_model.logit_scale
-        # self.dtype = clip_model.dtype
         self.dtype = clip_model.dtype
         clip_model = clip_model.cuda()
         prompt_text = ['a photo of a '+name.replace("_", " ") for name in classnames]
-        # self.tokenized_prompts = self.prompt_learner.tokenized_prompts
         self.image_encoder = clip_model.visual
         self.text_encoder = TextEncoder(clip_model)
         self.logit_scale = clip_model.logit_scale
-
-
         self.tokenized_prompts = torch.cat([clip.tokenize(p) for p in prompt_text]).cuda()
         self.embedding = clip_model.token_embedding(self.tokenized_prompts).type(self.dtype)
 

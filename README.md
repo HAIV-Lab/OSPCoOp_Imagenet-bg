@@ -29,3 +29,15 @@ python ./GroundingSAM/masking.py --config GroundingDINO/groundingdino/config/Gro
 ```
 Note: Set "output_dir" to your image directory, and place the images to be processed in the "./output_dir/raw" directory.
 ### Image Inpainting
+Please follow these steps:
+
+Step1: Please install [Inpaint-Anything](https://github.com/geekyutao/Inpaint-Anything).
+
+Step2: Copy the ./Inpainting/inpainting.py, ./Inpainting/Texture_inpainting.py and ./GroundingSAM/classnames.py file into your Inpaint-Anything project directory.
+
+Step3: Run the following command:
+```
+python ./GroundingSAM/masking.py --config GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py   --grounded_checkpoint groundingdino_swint_ogc.pth   --sam_checkpoint sam_vit_h_4b8939.pth   --output_dir "output_dir"   --box_threshold 0.3   --text_threshold 0.25    --device "cuda"
+```
+Note: Set "output_dir" to your image directory, and place the images to be processed in the "./output_dir/raw" directory.
+

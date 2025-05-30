@@ -27,6 +27,7 @@
 <div align="center">
   The code repository for "Overcoming Shortcut Problem in VLM for Robust Out-of-Distribution Detection" in PyTorch.
 </div>
+
 ## :rocket: News
 [05/2025] 🎉  We have released the code and checkpoints for training and evluation.
 

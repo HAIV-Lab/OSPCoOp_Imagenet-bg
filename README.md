@@ -1,22 +1,20 @@
-<div align=center>
-<h1> Overcoming Shortcut Problem in VLM for Robust Out-of-Distribution Detection 
-
- (CVPR 2025)
-</h1>
+<div align="center">
+  <h1>Overcoming Shortcut Learning in Vision-Language Models for Robust Out-of-Distribution Detection</h1>
+  <h3>(CVPR 2025)</h3>
 </div>
-<div align=center>
-
 
 <div align="center">
-  <h3>
-    <a>Zhuo Xu</a>, <a>Xiang Xiang</a>, <a>Yifan Liang</a>
-    <br><br>
-    National Key Lab of Multi-Spectral Information Intelligent Processing Technology
-School of Artificial Intelligence and Automation,Huazhong University of Science and Technology, China
-   <br><br>
-     Peng Cheng National Laboratory, Shenzhen, China
-
-  </h3>
+  <h2>
+    <a href="#">Zhuo Xu</a><sup>1</sup>, 
+    <a href="#">Xiang Xiang</a><sup>1,2</sup>, 
+    <a href="#">Yifan Liang</a><sup>1</sup>
+  </h2>
+  
+  <p>
+    <sup>1</sup> National Key Lab of Multi-Spectral Information Intelligent Processing Technology<br>
+    School of Artificial Intelligence and Automation, Huazhong University of Science and Technology, China<br><br>
+    <sup>2</sup> Peng Cheng National Laboratory, Shenzhen, China
+  </p>
 </div>
 
 

@@ -1,5 +1,6 @@
 <div align=center>
 <h1> Overcoming Shortcut Problem in VLM for Robust Out-of-Distribution Detection 
+ 
  (CVPR 2025)
 </h1>
 </div>

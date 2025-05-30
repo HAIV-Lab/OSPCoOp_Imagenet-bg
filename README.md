@@ -26,10 +26,7 @@
     <sup>2</sup> Peng Cheng National Laboratory, Shenzhen, China
   </p>
 </div>
-
-
 The code repository for "Overcoming Shortcut Problem in VLM for Robust Out-of-Distribution Detection" in PyTorch. 
-
 </div>
 
 ## :rocket: News

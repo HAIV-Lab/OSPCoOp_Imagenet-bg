@@ -8,6 +8,20 @@
 </div>
 <div align=center>
 
+
+<div align="center">
+  <h3>
+    <a>Zhuo Xu</a>, <a>Xiang Xiang</a>, <a>Yifan Liang</a>
+    <br><br>
+    National Key Lab of Multi-Spectral Information Intelligent Processing Technology
+School of Artificial Intelligence and Automation,Huazhong University of Science and Technology, China
+   
+     Peng Cheng National Laboratory, Shenzhen, China
+
+  </h3>
+</div>
+
+
 The code repository for "Overcoming Shortcut Problem in VLM for Robust Out-of-Distribution Detection" in PyTorch. 
 
 </div>

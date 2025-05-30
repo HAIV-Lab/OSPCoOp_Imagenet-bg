@@ -1,4 +1,7 @@
-# Overcoming Shortcut Problem in VLM for Robust Out-of-Distribution Detection
+<div align=center>
+<h1> Overcoming Shortcut Problem in VLM for Robust Out-of-Distribution Detection </h1>
+</div>
+<div align=center>
 
 The code repository for "Overcoming Shortcut Problem in VLM for Robust Out-of-Distribution Detection" in PyTorch. 
     

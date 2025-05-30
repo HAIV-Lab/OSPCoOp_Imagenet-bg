@@ -5,7 +5,12 @@
   <a href="#">
   <img src="https://img.shields.io/badge/%F0%9F%93%96-CVPR_2025-red.svg?style=flat-square" alt="CVPR 2025">
 </a>
-
+  <a href='#'>
+      <img src='https://img.shields.io/badge/Project-Page-green?style=flat&logo=googlechrome&logoColor=green' alt='Project page'>
+    </a>
+<a href="#">
+    <img alt="Kaggle" src="https://kaggle.com/static/images/open-in-kaggle.svg">
+</a>
 
 </div>
 

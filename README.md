@@ -1,6 +1,16 @@
 <div align="center">
   <h1>Overcoming Shortcut Learning in Vision-Language Models for Robust Out-of-Distribution Detection</h1>
 
+  <a href="#">
+    <img src="https://img.shields.io/badge/%F0%9F%93%96-CVPR_2025-red.svg?style=flat-square" alt="CVPR 2025">
+  </a>
+  <a href='#'>
+    <img src='https://img.shields.io/badge/Project-Page-green?style=flat&logo=googlechrome&logoColor=green' alt='Project page'>
+  </a>
+  <a href="#">
+    <img alt="Kaggle Dataset" src="https://img.shields.io/badge/Kaggle-Dataset-20BEFF?logo=kaggle&logoColor=white">
+  </a>
+
   <h2>
     <a href="#">Zhuo Xu</a><sup>1</sup>, 
     <a href="#">Xiang Xiang</a><sup>1,2</sup>, 
@@ -11,18 +21,6 @@
     <sup>1</sup> National Key Lab of Multi-Spectral Information Intelligent Processing Technology<br>
     School of Artificial Intelligence and Automation, Huazhong University of Science and Technology, China<br><br>
     <sup>2</sup> Peng Cheng National Laboratory, Shenzhen, China
-  </p>
-
-  <p>
-    <a href="#">
-      <img src="https://img.shields.io/badge/%F0%9F%93%96-CVPR_2025-red.svg?style=flat-square" alt="CVPR 2025">
-    </a>
-    <a href='#'>
-      <img src='https://img.shields.io/badge/Project-Page-green?style=flat&logo=googlechrome&logoColor=green' alt='Project page'>
-    </a>
-    <a href="#">
-      <img alt="Kaggle Dataset" src="https://img.shields.io/badge/Kaggle-Dataset-20BEFF?logo=kaggle&logoColor=white">
-    </a>
   </p>
 </div>
 

@@ -1,5 +1,11 @@
 <div align="center">
   <h1>Overcoming Shortcut Learning in Vision-Language Models for Robust Out-of-Distribution Detection</h1>
+
+
+  <a href="#">
+  <img src="https://img.shields.io/badge/%F0%9F%93%96-CVPR_2025-red.svg?style=flat-square" alt="CVPR 2025">
+</a>
+
   <h3>(CVPR 2025)</h3>
 </div>
 

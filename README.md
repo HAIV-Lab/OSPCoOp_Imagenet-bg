@@ -17,7 +17,7 @@ The code repository for "Overcoming Shortcut Problem in VLM for Robust Out-of-Di
 [02/2025]🎉  Our paper has been accepted by CVPR2025.
 
 ## :eyes: Table of Contents
-1. [The proposed ImageNet-Bg](#The proposed ImageNet-Bg)
+1. [The proposed ImageNet-Bg](# :sparkles:The proposed ImageNet-Bg)
 2. [Dataset Preparation](#Dataset Preparation)
 3. [Train and Evaluate OSPCoOp](#Train and Evaluate OSPCoOp)
 5. [Acknowledgements](#Acknowledgement)

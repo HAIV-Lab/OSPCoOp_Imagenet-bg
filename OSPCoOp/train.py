@@ -9,7 +9,7 @@ import contextlib
 import io
 import datasets.imagenet
 import trainers.ospcoop
-
+import os
 
 def print_args(args):
     print("***************")
@@ -35,7 +35,8 @@ def reset_cfg(cfg, args):
 
     if args.trainer:
         cfg.TRAINER.NAME = args.trainer
-
+    
+    cfg.few_shot_sampler = args.few_shot_sampler
     cfg.loss1 = args.loss1
     cfg.loss2 = args.loss2
     cfg.glmcm_local_weight = args.glmcm_local_weight
@@ -47,7 +48,8 @@ def reset_cfg(cfg, args):
 
     cfg.inpaint_thre = args.inpaint_thre
     cfg.mask_thre = args.mask_thre
-    cfg.shots = args.shots
+    
+    cfg.DATASET.NUM_SHOTS = args.shots
     cfg.train_root = 'ImageNet_' + str(args.shots) + 'shot' + '_seed' + str(args.seed)
 
     cfg.eval_freq = args.eval_freq
@@ -108,9 +110,14 @@ def main(args):
         torch.backends.cudnn.benchmark = True
 
     print_args(args)
+    
     with contextlib.redirect_stdout(io.StringIO()):
         trainer = build_trainer(cfg)
-
+    
+    if args.few_shot_sampler:
+        print("All images resized and saved. Force-exiting now.")
+        os._exit(0)    
+        
     if args.eval_only:
         trainer.load_model(args.model_dir, epoch=args.load_epoch)
         trainer.eval_ood()
@@ -139,6 +146,13 @@ if __name__ == "__main__":
         help="whether to apply ood aug (True/False)"
     )
     
+    parser.add_argument(
+        "--few_shot_sampler",
+        type=bool,
+        default=False,
+        help="whether to sample few shot data and save to local (True/False)"
+    )
+        
     parser.add_argument(
         "--eval-bg",
         type=bool,

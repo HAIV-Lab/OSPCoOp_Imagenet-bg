@@ -1,19 +1,16 @@
 <div align="center">
   <h1>Overcoming Shortcut Learning in Vision-Language Models for Robust Out-of-Distribution Detection</h1>
 
-
   <a href="#">
-  <img src="https://img.shields.io/badge/%F0%9F%93%96-CVPR_2025-red.svg?style=flat-square" alt="CVPR 2025">
-</a>
+    <img src="https://img.shields.io/badge/%F0%9F%93%96-CVPR_2025-red.svg?style=flat-square" alt="CVPR 2025">
+  </a>
   <a href='#'>
-      <img src='https://img.shields.io/badge/Project-Page-green?style=flat&logo=googlechrome&logoColor=green' alt='Project page'>
-    </a>
-<a href="#">
+    <img src='https://img.shields.io/badge/Project-Page-green?style=flat&logo=googlechrome&logoColor=green' alt='Project page'>
+  </a>
+  <a href="#">
     <img alt="Kaggle Dataset" src="https://img.shields.io/badge/Kaggle-Dataset-20BEFF?logo=kaggle&logoColor=white">
-</a>
-</div>
+  </a>
 
-<div align="center">
   <h2>
     <a href="#">Zhuo Xu</a><sup>1</sup>, 
     <a href="#">Xiang Xiang</a><sup>1,2</sup>, 
@@ -26,9 +23,10 @@
     <sup>2</sup> Peng Cheng National Laboratory, Shenzhen, China
   </p>
 </div>
-The code repository for "Overcoming Shortcut Problem in VLM for Robust Out-of-Distribution Detection" in PyTorch. 
-</div>
 
+<div align="center">
+  The code repository for "Overcoming Shortcut Problem in VLM for Robust Out-of-Distribution Detection" in PyTorch.
+</div>
 ## :rocket: News
 [05/2025] 🎉  We have released the code and checkpoints for training and evluation.
 

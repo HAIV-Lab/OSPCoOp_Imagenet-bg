@@ -1,8 +1,6 @@
 <div align=center>
 <h1> Overcoming Shortcut Problem in VLM for Robust Out-of-Distribution Detection 
 
-
- 
  (CVPR 2025)
 </h1>
 </div>
@@ -15,7 +13,7 @@
     <br><br>
     National Key Lab of Multi-Spectral Information Intelligent Processing Technology
 School of Artificial Intelligence and Automation,Huazhong University of Science and Technology, China
-   
+   <br><br>
      Peng Cheng National Laboratory, Shenzhen, China
 
   </h3>

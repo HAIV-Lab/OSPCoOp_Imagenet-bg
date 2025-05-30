@@ -9,8 +9,7 @@
       <img src='https://img.shields.io/badge/Project-Page-green?style=flat&logo=googlechrome&logoColor=green' alt='Project page'>
     </a>
 <a href="#">
-    <img alt="Kaggle" src="https://kaggle.com/static/images/open-in-kaggle.svg" width="100">
-    <span style="margin-left: 8px; font-weight: bold;">Data</span>
+    <img alt="Kaggle" src="https://kaggle.com/static/images/Data.svg" width="100">
 </a>
 </div>
 

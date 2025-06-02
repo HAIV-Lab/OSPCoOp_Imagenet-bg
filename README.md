@@ -113,6 +113,14 @@ After preparing Pseudo-OOD data, please run the following command to train OSPCo
 CUDA_VISIBLE_DEVICES=0 python train.py   --loss1 1.5 --loss2 0.5 --trainer OSPCoOp --shots 16 --output_dir ./runs/16shots 
 ```
 
+To train OSPCoOp with ID aug data, please run `./OSPCoOp/idaug.py` first with the following command:
+```
+CUDA_VISIBLE_DEVICES=0 python idaug.py --train_root "ImageNet_1shot_seed1" --mask_thre 0.5 --shots 1 --seed 1 --id_aug_options "1,2,3" --id_aug_times "1,1,1" --id_aug_rate "0.5,0.5,0.5"
+```
+Then, run the following command to train OSPCoOp:
+```
+CUDA_VISIBLE_DEVICES=0 python train.py   --loss1 1.5 --loss2 0.5 --trainer OSPCoOp --shots 1 --eval_freq 20 --config-file "configs/trainers/OSPCoOp/vit_b16_ep20.yaml" --id_aug_dir "xxx" --seed 1  --output_dir "./runs/xxxx"
+```
 ### OOD Detection Evaluation
 For quick start, we share our 16-shot OSPCoOp checkpoint, please download them via the url.
 

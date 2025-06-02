@@ -65,7 +65,7 @@ After downloading the datasets, update the data root path in `./OSPCoOp/root_con
 
 Please run the following command to sample few-shot training data for further Pseudo-OOD Generation.
 ```
-CUDA_VISIBLE_DEVICES=2 python train.py  --trainer OSPCoOp --shots 16 --few_shot_sampler True
+CUDA_VISIBLE_DEVICES=2 python train.py  --trainer OSPCoOp --shots 16 --few_shot_sampler True --seed 1
 ```
 
 ### Pseudo-OOD Generation

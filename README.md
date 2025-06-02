@@ -122,7 +122,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py  --trainer OSPCoOp --shots 16 --eval_only
 ```
 To evaluate ImageNet-Bg, please run the following command.
 ```
-CUDA_VISIBLE_DEVICES=0 python train.py  --trainer OSPCoOp --shots 16 --eval_only True --model-dir ./runs/16shots  
+CUDA_VISIBLE_DEVICES=0 python train.py  --trainer OSPCoOp --shots 16 --eval_only True --model-dir ./runs/16shots  --eval-bg True
 ```
 
 ## :microscope: Visualization

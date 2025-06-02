@@ -13,8 +13,8 @@
 
   <h2>
     Zhuo Xu</a><sup>1</sup>, 
-    <a href="#">Xiang Xiang</a><sup>1,2</sup>, 
-    <a href="#">Yifan Liang</a><sup>1</sup>
+    Xiang Xiang</a><sup>1,2</sup>, 
+    Yifan Liang</a><sup>1</sup>
   </h2>
   
   <p>

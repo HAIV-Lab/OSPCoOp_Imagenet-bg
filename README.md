@@ -126,7 +126,6 @@ CUDA_VISIBLE_DEVICES=0 python train.py  --trainer OSPCoOp --shots 16 --eval_only
 ```
 
 ## :microscope: Visualization
-This work is based on the following repositories: [Grounded-SAM](https://arxiv.org/abs/2401.14159), [LoCoOp](https://arxiv.org/abs/2306.01293), [Inpaint Anything](https://arxiv.org/abs/2304.06790), [LaMa](https://arxiv.org/abs/2109.07161). Thanks to their excellent work!!!
 
 <img src="Figs/OOD-Bg.png" width="96%">
 

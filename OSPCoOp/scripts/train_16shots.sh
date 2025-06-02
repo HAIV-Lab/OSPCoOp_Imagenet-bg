@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python train.py   --loss1 1.5 --loss2 0.5 --trainer OSPCoOp --shots 16 --output_dir ./runs/16shots

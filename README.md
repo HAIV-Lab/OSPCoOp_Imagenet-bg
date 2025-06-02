@@ -52,6 +52,7 @@ To further test the robustness of the model against background interference, we 
 
 <img src="Figs/ImageNet-bg.png" width="96%">
 <img src="Figs/imageNet-bg-more.png" width="96%">
+
 ## :wrench: Dataset Preparation
 
 - ID Datasets: ImageNet-1K, The ImageNet-1k dataset (ILSVRC-2012) can be downloaded [here](https://image-net.org/challenges/LSVRC/2012/index.php#).
@@ -127,7 +128,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py  --trainer OSPCoOp --shots 16 --eval_only
 ## :microscope: Visualization
 This work is based on the following repositories: [Grounded-SAM](https://arxiv.org/abs/2401.14159), [LoCoOp](https://arxiv.org/abs/2306.01293), [Inpaint Anything](https://arxiv.org/abs/2304.06790), [LaMa](https://arxiv.org/abs/2109.07161). Thanks to their excellent work!!!
 
-<img src="Figs/OOD-Bg" width="96%">
+<img src="Figs/OOD-Bg.png" width="96%">
 
 ## :beers:Acknowledgement
 This work is based on the following repositories: [Grounded-SAM](https://arxiv.org/abs/2401.14159), [LoCoOp](https://arxiv.org/abs/2306.01293), [Inpaint Anything](https://arxiv.org/abs/2304.06790), [LaMa](https://arxiv.org/abs/2109.07161). Thanks to their excellent work!!!

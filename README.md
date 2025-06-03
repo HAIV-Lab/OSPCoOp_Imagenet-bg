@@ -29,7 +29,7 @@
 </div>
 
 ## :rocket: News
-[05/2025] 🎉  We have released the code and checkpoints for training and evluation.
+[05/2025] 🎉  We have released the code and checkpoints for training and evalution.
 
 [04/2025] 🎉  Our paper has been selected as a Highlight paper.
 

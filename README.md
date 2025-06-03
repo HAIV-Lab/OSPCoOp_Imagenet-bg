@@ -70,7 +70,7 @@ CUDA_VISIBLE_DEVICES=2 python train.py  --trainer OSPCoOp --shots 16 --few_shot_
 
 ### Pseudo-OOD Generation
 
-For quick start, we have provided our generated Pseudo-OOD data, which can be downloaded here ([Google Drive](https://drive.google.com/drive/folders/1hht3yDUNXsXqZSgaI0MMTYgot4D5F7bl?usp=drive_link) or [Baidu Cloud](https://pan.baidu.com/s/1tH8JCnVta0cxZyA-z8CJsw?pwd=dm5u )).
+For quick start, we have provided our generated Pseudo-OOD data, which can be downloaded here ([Google Drive](https://drive.google.com/drive/folders/1hht3yDUNXsXqZSgaI0MMTYgot4D5F7bl?usp=drive_link) or [Baidu Cloud](https://pan.baidu.com/s/1tH8JCnVta0cxZyA-z8CJsw?pwd=dm5u)).
 
 #### Image Masking
 Please follow these steps:
@@ -85,7 +85,7 @@ python masking.py --config GroundingDINO/groundingdino/config/GroundingDINO_Swin
 ```
 Note: Set "output_dir" to your image directory, and place the images to be processed in the "./output_dir/raw" directory.
 #### Image Inpainting
-Please follow these steps and set the output_dir to ./:
+Please follow these steps:
 
 Step1: Please install [Inpaint-Anything](https://github.com/geekyutao/Inpaint-Anything).
 
@@ -122,13 +122,13 @@ Then, run the following command to train OSPCoOp:
 CUDA_VISIBLE_DEVICES=0 python train.py   --loss1 1.5 --loss2 0.5 --trainer OSPCoOp --shots 1 --eval_freq 20 --config-file "configs/trainers/OSPCoOp/vit_b16_ep20.yaml" --id_aug_dir "xxx" --seed 1  --output_dir "./runs/xxxx"
 ```
 ### OOD Detection Evaluation
-For quick start, we share our 16-shot OSPCoOp checkpoint, please download them via.
+For quick start, we share our 16-shot OSPCoOp checkpoint, please download them via ([Google Drive](https://drive.google.com/drive/folders/1WNM7aMArlJJiYq6_WtKnvB6hCbajZkbH?usp=sharing) or [Baidu Cloud](https://pan.baidu.com/s/1AiHWvh2-VqrB0Thl0UxyJQ?pwd=1b8x)).
 
 To evaluate iNaturalist, SUN, Places, and Texture OOD data, please run the following command.
 ```
 CUDA_VISIBLE_DEVICES=0 python train.py  --trainer OSPCoOp --shots 16 --eval_only True --model-dir ./runs/16shots 
 ```
-To evaluate ImageNet-Bg, please run the following command.
+To evaluate ImageNet-Bg, please run the following command ([Google Drive](https://drive.google.com/drive/folders/1hht3yDUNXsXqZSgaI0MMTYgot4D5F7bl?usp=drive_link) or [Baidu Cloud](https://pan.baidu.com/s/1tH8JCnVta0cxZyA-z8CJsw?pwd=dm5u)).
 ```
 CUDA_VISIBLE_DEVICES=0 python train.py  --trainer OSPCoOp --shots 16 --eval_only True --model-dir ./runs/16shots  --eval-bg True
 ```

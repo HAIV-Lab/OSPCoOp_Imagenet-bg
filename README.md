@@ -128,7 +128,7 @@ To evaluate iNaturalist, SUN, Places, and Texture OOD data, please run the follo
 ```
 CUDA_VISIBLE_DEVICES=0 python train.py  --trainer OSPCoOp --shots 16 --eval_only True --model-dir ./runs/16shots 
 ```
-To evaluate ImageNet-Bg, please run the following command ([Google Drive](https://drive.google.com/drive/folders/1hht3yDUNXsXqZSgaI0MMTYgot4D5F7bl?usp=drive_link) or [Baidu Cloud](https://pan.baidu.com/s/1tH8JCnVta0cxZyA-z8CJsw?pwd=dm5u)).
+To evaluate ImageNet-Bg, please run the following command.
 ```
 CUDA_VISIBLE_DEVICES=0 python train.py  --trainer OSPCoOp --shots 16 --eval_only True --model-dir ./runs/16shots  --eval-bg True
 ```

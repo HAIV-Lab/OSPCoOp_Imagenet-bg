@@ -70,7 +70,7 @@ CUDA_VISIBLE_DEVICES=2 python train.py  --trainer OSPCoOp --shots 16 --few_shot_
 
 ### Pseudo-OOD Generation
 
-For quick start, we have provided our generated Pseudo-OOD data, which can be downloaded here([Google Drive](https://drive.google.com/drive/folders/1hht3yDUNXsXqZSgaI0MMTYgot4D5F7bl?usp=drive_link) or [Baidu Cloud](https://pan.baidu.com/s/1tH8JCnVta0cxZyA-z8CJsw?pwd=dm5u )).
+For quick start, we have provided our generated Pseudo-OOD data, which can be downloaded here ([Google Drive](https://drive.google.com/drive/folders/1hht3yDUNXsXqZSgaI0MMTYgot4D5F7bl?usp=drive_link) or [Baidu Cloud](https://pan.baidu.com/s/1tH8JCnVta0cxZyA-z8CJsw?pwd=dm5u )).
 
 #### Image Masking
 Please follow these steps:
@@ -108,7 +108,7 @@ python Texture_inpainting.py  --output_dir output    --lama_ckpt ./pretrained_mo
 ## :computer: Train and Evaluate OSPCoOp
 Our experiments are conducted with Python 3.9.18 and Pytorch 2.1.0. Followed [LoCoOp](https://github.com/AtsuMiyai/LoCoOp) and [CoOp](https://github.com/KaiyangZhou/CoOp), the training code is built on top of the awedome toolbox [Dassl](https://github.com/KaiyangZhou/Dassl.pytorch). So, you need to install `dassl` first. Then, run `pip install -r requirements.txt` to install additional packages. Please note that a new environment should be created, which is different from the aforementioned Pseudo-OOD Generation. 
 ### Training
-After preparing Pseudo-OOD data, please run the following command to train OSPCoOp:
+After preparing Pseudo-OOD data, please place the Pseudo-OOD data in the `./OSPCoOp/data/` directory and run the following command to train OSPCoOp:
 ```
 CUDA_VISIBLE_DEVICES=0 python train.py   --loss1 1.5 --loss2 0.5 --trainer OSPCoOp --shots 16 --output_dir ./runs/16shots 
 ```

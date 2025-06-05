@@ -106,7 +106,7 @@ python Texture_inpainting.py  --output_dir output    --lama_ckpt ./pretrained_mo
 ```
 
 ## :computer: Train and Evaluate OSPCoOp
-Our experiments are conducted with Python 3.9.18 and Pytorch 2.1.0. Followed [LoCoOp](https://github.com/AtsuMiyai/LoCoOp) and [CoOp](https://github.com/KaiyangZhou/CoOp), the training code is built on top of the awedome toolbox [Dassl](https://github.com/KaiyangZhou/Dassl.pytorch). So, you need to install `dassl` first. Please note that a new environment should be created, which is different from the aforementioned Pseudo-OOD Generation. 
+Our experiments are conducted with Python 3.9.18 and Pytorch 2.1.0. Followed [LoCoOp](https://github.com/AtsuMiyai/LoCoOp) and [CoOp](https://github.com/KaiyangZhou/CoOp), the training code is built on top of the awesome toolbox [Dassl](https://github.com/KaiyangZhou/Dassl.pytorch). So, you need to install `dassl` first. Please note that a new environment should be created, which is different from the aforementioned Pseudo-OOD Generation. 
 ### Training
 After preparing Pseudo-OOD data, please place the Pseudo-OOD data in the `./OSPCoOp/data/` directory and run the following command to train OSPCoOp:
 ```

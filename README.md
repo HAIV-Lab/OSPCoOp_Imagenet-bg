@@ -1,10 +1,10 @@
 <div align="center">
   <h1>Overcoming Shortcut Learning in Vision-Language Models for Robust Out-of-Distribution Detection</h1>
 
-  <a href="#">
+  <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Xu_Overcoming_Shortcut_Problem_in_VLM_for_Robust_Out-of-Distribution_Detection_CVPR_2025_paper.pdf">
     <img src="https://img.shields.io/badge/%F0%9F%93%96-CVPR_2025-red.svg?style=flat-square" alt="CVPR 2025">
   </a>
-  <a href='#'>
+  <a href='https://haiv-lab.github.io/OSPCoOp-CVPR25-HighLight.github.io/'>
     <img src='https://img.shields.io/badge/Project-Page-green?style=flat&logo=googlechrome&logoColor=green' alt='Project page'>
   </a>
   <a href="https://www.kaggle.com/datasets/xiangexiang/imagenet-bg-ospcoop-cvpr2025">
@@ -146,5 +146,12 @@ This work is based on the following repositories: [Grounded-SAM](https://arxiv.o
 If you find our work interesting or use our methods, please consider citing:
 
 ```
-
+@InProceedings{Xu_2025_CVPR,
+    author    = {Xu, Zhuo and Xiang, Xiang and Liang, Yifan},
+    title     = {Overcoming Shortcut Problem in VLM for Robust Out-of-Distribution Detection},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {15402-15412}
+}
 ```

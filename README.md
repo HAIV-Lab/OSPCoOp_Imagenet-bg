@@ -18,8 +18,7 @@
   </h2>
   
   <p>
-    <sup>1</sup> National Key Lab of Multi-Spectral Information Intelligent Processing Technology<br>
-    School of Artificial Intelligence and Automation, Huazhong University of Science and Technology, China<br><br>
+    <sup>1</sup> Huazhong University of Science and Technology, China<br><br>
     <sup>2</sup> Peng Cheng National Laboratory, Shenzhen, China
   </p>
 </div>

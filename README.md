@@ -19,7 +19,7 @@
   
   <p>
     <sup>1</sup> Huazhong University of Science and Technology, China<br><br>
-    <sup>2</sup> Peng Cheng National Laboratory, Shenzhen, China
+    <sup>2</sup> Peng Cheng National Laboratory, China
   </p>
 </div>
 

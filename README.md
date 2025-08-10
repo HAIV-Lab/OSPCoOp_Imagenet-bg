@@ -4,7 +4,7 @@
   <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Xu_Overcoming_Shortcut_Problem_in_VLM_for_Robust_Out-of-Distribution_Detection_CVPR_2025_paper.pdf">
     <img src="https://img.shields.io/badge/%F0%9F%93%96-CVPR_2025-red.svg?style=flat-square" alt="CVPR 2025">
   </a>
-  <a href='https://haiv-lab.github.io/OSPCoOp.github.io/'>
+  <a href='https://haiv-lab.github.io/OSPCoOp/'>
     <img src='https://img.shields.io/badge/Project-Page-green?style=flat&logo=googlechrome&logoColor=green' alt='Project page'>
   </a>
   <a href="https://www.kaggle.com/datasets/xiangexiang/imagenet-bg-ospcoop-cvpr2025">

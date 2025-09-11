@@ -107,7 +107,7 @@ def get_image_paths1(directory):
 
     return image_paths
 
-# 使用示例
+
 def read_file_line_by_line(file_path):
     id2clsname = {}
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -115,16 +115,26 @@ def read_file_line_by_line(file_path):
             print(line.strip())
             id2clsname[line.split(' ')[0]]=line.split(' ')[1][0:-1].replace('_', ' ')
     return id2clsname
-            # 使用 strip() 去除行末的换行符
+
+
+def save_mask_data(imgname, mask_list, box_list, label_list, class_name):
+
+    mask_dir = os.path.join(root, 'mask')
+    os.makedirs(mask_dir, exist_ok=True)
+    mask_img = torch.zeros(mask_list.shape[-2:])
+    for idx, mask in enumerate(mask_list):
+        mask_img[mask.cpu().numpy()[0] == True] = 255
+    mask_img = np.stack((mask_img,) * 3, axis=-1)
+    mask_img = mask_img.astype(np.uint8)  
+    mask_img = Image.fromarray(mask_img)
+    mask_img.save(os.path.join(mask_dir, imgname[0:-4] + 'png'))
+
 
 def get_image_paths(root_folder):
     image_paths = []
-    # 遍历根文件夹下的所有子文件夹
     for subdir, _, files in os.walk(root_folder):
         for file in files:
-            # 检查文件扩展名是否是常见的图片格式
             if file.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.bmp')):
-                # 将完整路径添加到列表中
                 image_paths.append(os.path.join(subdir, file))
     return image_paths
 if __name__ == "__main__":
@@ -229,3 +239,4 @@ if __name__ == "__main__":
                 )
             except:
                 continue
+            save_mask_data(imgname, masks, boxes_filt, pred_phrases, img_clsname)
